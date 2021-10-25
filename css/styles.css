@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Moonshiner Regular';
+  src: url(../fonts/Moonshiner-Regular.woff);
+}
+
+@font-face {
+  font-family: 'Moonshiner Oblique';
+  src: url(../fonts/Moonshiner-Oblique.woff);
+}
+
+@font-face {
+  font-family: 'Moonshiner Regular Lines';
+  src: url(../fonts/Moonshiner-RegularLines.woff);
+}
+
+body {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+  min-height: 39rem;
+}
+
+@media (min-width:640px) {
+  .header  {
+    min-height: 60rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    min-height: 70rem;
+  }
+}
+
+.flame-bg {
+  background-image: url(../images/flame-bg.png);
+}
+
+.flame-highlight  {
+  background-image: url(../images/flame-highlight.png);
+}
+
+.artist-container  {
+  background-image: url(../images/artist.png);
+}
+
+.header-shadow  {
+  background-image: url(../images/shadow.png);
+}
+
+.flame-bg,
+.flame-highlight,
+.artist-container,
+.header-shadow  {
+  background-size: auto 630px;
+}
+
+@media (min-width:640px) {
+  .flame-bg,
+  .flame-highlight,
+  .artist-container,
+  .header-shadow  {
+    background-size: cover;
+  }
+}
+
+@media (max-width:576px) {
+  .header {
+    min-height: 35rem;
+  }
+
+  .flame-bg,
+  .flame-highlight,
+  .artist-container,
+  .header-shadow  {
+    background-size: auto 560px;
+  }
+
+  .logo img {
+    width: 66.666667%;
+  }
+}
+
+.title {
+  font-family: 'Moonshiner Regular', sans-serif;
+  color: #e23000;
+  letter-spacing: 0.2em;
+}
+
+.text-shadow {
+  font-family: 'Roboto', sans-serif;
+}
+
+.promotion-title {
+  letter-spacing: 0.025em;
+  color: #000;
+}
+
+.promotion-sub-title {
+  color: #e23000;
+}
+
+.sub-title {
+  font-family: 'Moonshiner Oblique', sans-serif;
+}
+
+.text-striped {
+  font-family: 'Moonshiner Regular Lines', sans-serif;
+}
+
+.tracklist li:first-child {
+  background-color: #212121;
+}
